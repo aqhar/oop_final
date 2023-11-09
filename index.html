@@ -1,0 +1,206 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+        <title>Makeup Search</title>
+
+        <!--CSS DESIGN-->
+        <style>
+            * {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Pacifico', serif;
+}
+
+.nav-button {
+    margin-top: 10px;
+    font-family: 'Pacifico', serif;
+}
+
+.nav-button a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.exit {
+    width: 20px;
+    height: 20px;
+}
+
+.form0 {
+    background-color: #fff;
+    padding: 20px;
+    width: 70%;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Pacifico', serif;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+input {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+h2 {
+    color: #333;
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Pacifico', serif;
+}
+
+hr {
+    border: 2px solid #333;
+    width: 50px;
+    margin: 10px auto;
+}
+
+#image-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#display {
+    font-size: 18px;
+    color: #333;
+}
+
+
+        </style>
+    </head>
+
+    <body>
+        <!--NAVIGATION-->
+        <nav>
+            <div class="logo">
+                <p>Makeup Search</p>
+            </div>
+            
+            <div class="nav-button">
+                <a href="index.html" style="color:#e0cac8;">Home</a>
+                <a href="favourite.html">Make List</a>
+                <a href="#" onclick="self.close();"><img src="close.png" class="exit"></a>
+            </div>
+        </nav>
+        <br>
+        <br>
+        <!--MAIN FORM-->
+        <div align="center">
+            <div class="form0" align="center">
+                <label>Makeup Brand: </label>
+                     <select id="makeup_input">
+                        <option value="almay">almay</option>
+                        <option value="alva">alva</option>
+                        <option value="anna sui">anna sui</option>
+                        <option value="annabelle">annabelle</option>
+                        <option value="benefit">benefit</option>
+                        <option value="boosh">boosh</option>
+                        <option value="burt's bees">burt's bees</option>
+                        <option value="butter london">butter london</option>
+                        <option value="c'est moi">c'est moi</option>
+                        <option value="cargo cosmetics">cargo cosmetics</option>
+                        <option value="china glaze">china glaze</option>
+                        <option value="clinique">clinique</option>
+                        <option value="coastal classic creation">coastal classic creation</option>
+                        <option value="colourpop">colourpop</option>
+                        <option value="covergirl">covergirl</option>
+                        <option value="dalish">dalish</option>
+                        <option value="deciem">deciem</option>
+                        <option value="dior">dior</option>
+                        <option value="dr. hauschka">dr. hauschka</option>
+                        <option value="e.l.f.">e.l.f.</option>
+                        <option value="essie">essie</option>
+                        <option value="fenty">fenty</option>
+                        <option value="glossier">glossier</option>
+                        <option value="green people">green people</option>
+                        <option value="iman">iman</option>
+                        <option value="l'oreal">l'oreal</option>
+                        <option value="lotus cosmetics usa">lotus cosmetics usa</option>
+                        <option value="maia's mineral galaxy">maia's mineral galaxy</option>
+                        <option value="marcelle">marcelle</option>
+                        <option value="marienatie">marienatie</option>
+                        <option value="maybelline">maybelline</option>
+                        <option value="milani">milani</option>
+                        <option value="mineral fusion">mineral fusion</option>
+                        <option value="misa">misa</option>
+                        <option value="moov">moov</option>
+                        <option value="nudus">nudus</option>
+                        <option value="nyx">nyx</option>
+                        <option value="orly ">orly</option>
+                        <option value="pacifica">pacifica</option>
+                        <option value="penny lane organics">penny lane organics</option>
+                        <option value="physicians formula">physicians formula</option>
+                        <option value="piggy paint">piggy paint</option>
+                        <option value="pure anada">pure anada</option>
+                        <option value="rejuva minerals">rejuva minerals</option>
+                        <option value="revlon">revlon</option>
+                        <option value="sally b's skin yummies">sally b's skin yummies</option>
+                        <option value="salon perfect">salon perfect</option>
+                        <option value="sante">sante</option>
+                        <option value="sinful colours">sinful colours</option>
+                        <option value="smashbox">smashbox</option>
+                        <option value="stila">stila</option>
+                        <option value="suncoat">suncoat</option>
+                        <option value="w3llpeople">w3llpeople</option>
+                        <option value="wet n wild">wet n wild</option>
+                        <option value="zorah">zorah</option>
+                        <option value="zorah biocosmetiques">zorah biocosmetiques</option>
+                    </select>
+                <label class="one">Makeup: </label>
+                <input type="text" id="type_input" placeholder="Enter makeup type:" />
+                <button type="button" onclick="buttonClicked()">Enter</button>
+            <script src = "function.js"></script>
+        </div>
+
+        <!--MAIN TITLE FOR RESULTS-->
+            <h2>Results</h2>
+            <hr>
+            <br>
+            <br>
+            <div id="image-container">
+
+            <p id="display"></p>
+        </div>  
+        
+    </body>
+</html>

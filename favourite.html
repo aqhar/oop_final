@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>feedback form</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+
+    <!--CSS Design-->
+    <style>
+      body {
+    background-color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Pacifico', serif;
+    color: #fa991c;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav {
+    background-color: #fa991c;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.logo {
+    margin-top: -3px;
+    float: left;
+    font-family: 'Pacifico', serif;
+    font-size: 24px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    color: #e49d96;
+}
+
+.nav-button {
+    margin-top: 15px;
+    float: right;
+    font-size: 20px;
+    font-family: 'Pacifico', serif;
+}
+
+.nav-button a {
+    font-size: 20px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.mainWrapper {
+    padding: 50px;
+    text-align: center;
+}
+
+label {
+    font-family: 'Pacifico', serif;
+    color: #fa991c;
+    font-size: 20px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+.form-control0 {
+    height: 30px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-control1 {
+    height: 150px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.default {
+    cursor: pointer;
+    color: #fff;
+    background-color: #fa991c;
+    border: #fa991c;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+.default:hover {
+    background-color: #fbb254;
+    border: #fbb254;
+}
+
+    </style>
+  </head>
+
+  <body>
+  <!--NAVIGATION-->
+    <nav>
+      <div class="logo">
+          <p>Makeup own list</p>
+      </div>
+      
+      <div class="nav-button">
+          <a href="index.html" style="color:#e49d96">Home</a>
+          <a href="favourite.html" style="color:#e49d96;">Make List</a>
+      </div>
+  </nav>
+
+  <!--MAIN FORM-->
+    <div class="mainWrapper">
+
+      <form>
+        <div class="form-group">
+          <label>List name</label><br>
+          <input id="fileName" type="text" class="form-control0">
+        </div>
+
+        <div class="form-group">
+          <label>Comtent</label><br>
+          <textarea id="fileContents" class="form-control1" row="5"></textarea>
+
+        </div>
+      </form>
+      <button id="btnCreate" class="default">Create</button>
+      <button id="btnRead" class="default">Read</button>
+      <button id="btnDelete" class="default">Delete</button>
+      <button id="btnUpdate" class="default">Update</button>
+
+    
+    </div>
+
+    <!--CALLING JS-->
+    <script src="main.js">  
+      
+    </script>
+  </body>
+</html>
